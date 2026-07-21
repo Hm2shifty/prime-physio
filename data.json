@@ -1,0 +1,432 @@
+{
+  "locations": {
+    "mississauga": {
+      "name": "Mississauga Clinic",
+      "address": "5425 Creditview Rd, Unit 6, Mississauga, ON L5V 2P3",
+      "phone": "905-286-9330",
+      "hours": {
+        "Mon, Wed, Fri": "6:30 AM – 7:00 PM",
+        "Tue, Thu": "7:00 AM – 7:00 PM",
+        "Saturday": "9:00 AM – 2:00 PM",
+        "Sunday": "Closed"
+      },
+      "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=-79.7225%2C43.5930%2C-79.7025%2C43.6030&layer=mapnik&marker=43.5979%2C-79.7126"
+    },
+    "aurora": {
+      "name": "Aurora Clinic",
+      "address": "372 Hollandview Trail, Unit 107, Aurora, ON L4G 0A5",
+      "phone": "905-726-2252",
+      "hours": {
+        "Mon – Thu": "8:00 AM – 8:00 PM",
+        "Friday": "8:00 AM – 7:00 PM",
+        "Saturday": "8:00 AM – 2:00 PM",
+        "Sunday": "Closed"
+      },
+      "mapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=-79.4596%2C44.0102%2C-79.4396%2C44.0202&layer=mapnik&marker=44.0152%2C-79.4496"
+    }
+  },
+  "services": [
+    {
+      "id": "orthopedic",
+      "title": "Orthopedic & Sports Physiotherapy",
+      "description": "Evidence-based recovery plans for sprains, muscle strains, ligament tears (ACL, rotator cuff), running injuries, and chronic pain. Hands-on joint mobilizations and customized active strengthening plans.",
+      "icon": "physio"
+    },
+    {
+      "id": "pelvic",
+      "title": "Pelvic Floor Physiotherapy",
+      "description": "Specialized assessment and rehabilitation for pelvic girdle pain, incontinence, prenatal/postnatal recovery, organ prolapse, and muscle dysfunction. Conducted in fully private, comfortable environments.",
+      "icon": "pelvic"
+    },
+    {
+      "id": "massage",
+      "title": "Registered Massage Therapy (RMT)",
+      "description": "Targeted deep tissue, myofascial release, Swedish massage, and trigger point therapy to reduce muscular tension, improve localized circulation, and speed up overall recovery.",
+      "icon": "massage"
+    },
+    {
+      "id": "acupuncture",
+      "title": "Acupuncture & Dry Needling",
+      "description": "Therapeutic insertion of needles targeting neurological pathways and muscular trigger points to alleviate pain, stimulate blood flow, and relieve severe muscle spasms.",
+      "icon": "acupuncture"
+    },
+    {
+      "id": "vestibular",
+      "title": "Concussion & Vestibular Rehab",
+      "description": "Advanced diagnostic and active balancing programs for vertigo (BPPV), persistent dizziness, post-concussive syndrome, and general gait/coordination instability issues.",
+      "icon": "vestibular"
+    },
+    {
+      "id": "surgical",
+      "title": "Post-Surgical Rehabilitation",
+      "description": "Structured, protocol-driven physical therapy following orthopedic surgeries (knee/hip replacements, ACL reconstructions, shoulder operations) to safely restore full range of motion.",
+      "icon": "surgical"
+    }
+  ],
+  "team": [
+    {
+      "name": "Ali Faghani",
+      "role": "PT • Owner & Clinic Director",
+      "category": "physio",
+      "description": "20+ years experience in advanced orthopedic care, sports injury rehabilitation, and neck/back pain solutions. Genuinely dedicated to his patients.",
+      "tags": ["Sports Rehab", "Spine Specialist"],
+      "initials": "AF",
+      "avatarColor": "pt-avatar",
+      "imagePath": ""
+    },
+    {
+      "name": "Deepika Somani",
+      "role": "Registered Physiotherapist",
+      "category": "physio",
+      "description": "Renowned for rotator cuff/shoulder recoveries, back pain rehabilitation, and active muscle reconditioning. Hands-on and highly thorough.",
+      "tags": ["Shoulder Injury", "Manual Therapy"],
+      "initials": "DS",
+      "avatarColor": "pt-avatar",
+      "imagePath": ""
+    },
+    {
+      "name": "Maggie Mishriky",
+      "role": "Registered Physiotherapist",
+      "category": "physio",
+      "description": "Expert in concussion management, vestibular rehab, neck strain relief, and active core strengthening. Maintains an outstanding encouraging attitude.",
+      "tags": ["Concussions", "Vestibular"],
+      "initials": "MM",
+      "avatarColor": "pt-avatar",
+      "imagePath": ""
+    },
+    {
+      "name": "Martina Skrela",
+      "role": "PT • Pelvic Floor Specialist",
+      "category": "pelvic",
+      "description": "Dedicated pelvic health physiotherapist specializing in pre/postnatal exercises, pregnancy pain management, and pelvic floor dysfunction.",
+      "tags": ["Pelvic Health", "Pregnancy"],
+      "initials": "MS",
+      "avatarColor": "pelvic-avatar",
+      "imagePath": ""
+    },
+    {
+      "name": "Monica Youssef",
+      "role": "Registered Physiotherapist",
+      "category": "physio",
+      "description": "Focused on orthopedic diagnoses, shoulder stability, joint biomechanics, post-surgical recovery, and patient education.",
+      "tags": ["Orthopedics", "Joint Stability"],
+      "initials": "MY",
+      "avatarColor": "pt-avatar",
+      "imagePath": ""
+    },
+    {
+      "name": "Gurdev (Dave)",
+      "role": "Registered Physiotherapist",
+      "category": "physio",
+      "description": "Highly skilled in manual manipulation, deep muscle release, leg biomechanics, and active recovery routines. Knows how to apply exact necessary pressure.",
+      "tags": ["Back & Leg Pain", "Manual Therapy"],
+      "initials": "GD",
+      "avatarColor": "pt-avatar",
+      "imagePath": ""
+    },
+    {
+      "name": "Kamand",
+      "role": "PT • Pelvic Health Specialist",
+      "category": "pelvic",
+      "description": "Specialized pelvic physiotherapist targeting chronic abdominal pain, prenatal conditioning, muscle coordination, and incontinence.",
+      "tags": ["Pelvic Floor", "Incontinence"],
+      "initials": "KM",
+      "avatarColor": "pelvic-avatar",
+      "imagePath": ""
+    },
+    {
+      "name": "Asra Noori",
+      "role": "Registered Massage Therapist",
+      "category": "massage",
+      "description": "Specializes in targeted trigger-point release, deep tissue massage, and tension headaches relief. Highly thorough RMT.",
+      "tags": ["Deep Tissue", "Trigger Points"],
+      "initials": "AN",
+      "avatarColor": "rmt-avatar",
+      "imagePath": ""
+    },
+    {
+      "name": "Ishika Sharma",
+      "role": "Registered Physiotherapist",
+      "category": "physio",
+      "description": "Passionate about athletic recovery, acute sprains, and custom injury prevention exercise prescriptions. Warm and welcoming provider.",
+      "tags": ["Acute Injury", "Acupuncture"],
+      "initials": "IS",
+      "avatarColor": "pt-avatar",
+      "imagePath": ""
+    },
+    {
+      "name": "Marichi (Maria)",
+      "role": "Registered Massage Therapist",
+      "category": "massage",
+      "description": "Over a decade of experience in therapeutic Swedish massage, myofascial release, and tension relief. Remembers your unique body needs.",
+      "tags": ["Swedish Massage", "Myofascial"],
+      "initials": "MM",
+      "avatarColor": "rmt-avatar",
+      "imagePath": ""
+    },
+    {
+      "name": "Hammad",
+      "role": "Registered Physiotherapist",
+      "category": "physio",
+      "description": "Specialized orthopedic rehab focusing on post-surgical recovery, gait analyses, acupuncture, and return-to-sport testing.",
+      "tags": ["Post-Surgical", "Acupuncture"],
+      "initials": "HM",
+      "avatarColor": "pt-avatar",
+      "imagePath": ""
+    },
+    {
+      "name": "Mo",
+      "role": "Physiotherapy Assistant",
+      "category": "admin",
+      "description": "Our lead physiotherapy assistant, working closely with PTs to guide patients through active rehabilitation exercises.",
+      "tags": ["Active Rehab", "Exercise Guide"],
+      "initials": "MO",
+      "avatarColor": "admin-avatar",
+      "imagePath": ""
+    },
+    {
+      "name": "Kayla, Zahra, Ali, Jag",
+      "role": "Clinic Support & Admin",
+      "category": "admin",
+      "description": "Our friendly reception and office administration team that coordinates billing, schedules, and supports patient comfort.",
+      "tags": ["Front Desk", "Direct Billing"],
+      "initials": "CS",
+      "avatarColor": "admin-avatar",
+      "imagePath": ""
+    }
+  ],
+  "reviews": [
+    {
+      "author": "NoorusSabbah Khan",
+      "date": "1 year ago",
+      "stars": 5,
+      "text": "Deepika is the most knowledgeable physiotherapist I have ever seen in my life. Thanks to her, my injured shoulder became 100% pain free despite a huge full thickness and another 50% thickness rotator cuff tears. The tears are still there, but no pain.",
+      "category": "shoulder",
+      "initials": "NK"
+    },
+    {
+      "author": "Gabriel Takla",
+      "date": "5 months ago",
+      "stars": 5,
+      "text": "I went in with a shoulder Injury, Monica Youssef was my PT, she was very kind and encouraging and able to accurately diagnose my shoulder issues and help me to strengthen it and regain stability over a 2 month stretch of time.",
+      "category": "shoulder",
+      "initials": "GT"
+    },
+    {
+      "author": "Tyler C",
+      "date": "4 years ago",
+      "stars": 5,
+      "text": "Have been seeing Ali for almost 10 yrs he's professional and to be honest a magician. I've been to other physios, chiro, massage therapists to help ease my back pain. Ali's the ONLY one who's been able to provide relief and sustainable recovery.",
+      "category": "back-pain",
+      "initials": "TC"
+    },
+    {
+      "author": "Martyna Szyller",
+      "date": "4 years ago",
+      "stars": 5,
+      "text": "Wanted to leave a review for the Pelvic Floor Physio Martina Skrela. She is so professional, so helpful and knows how to make people feel comfortable. I’m really grateful for all the help she provided me with during my pregnancy and have to say she made a huge impact on my pain.",
+      "category": "pelvic",
+      "initials": "MS"
+    },
+    {
+      "author": "Kim Dhugha",
+      "date": "1 year ago",
+      "stars": 5,
+      "text": "I accompanied my husband to see Gurdev(Dave) for his back and leg pain, and we were both impressed with his expertise. Dave accurately diagnosed the issue and provided personalized exercises that have greatly reduced my husband’s pain. We highly recommend him!",
+      "category": "back-pain",
+      "initials": "KD"
+    },
+    {
+      "author": "Claudette Johnson",
+      "date": "2 years ago",
+      "stars": 5,
+      "text": "I am grateful for the welcoming, positive, and caring team of professionals who are members of The Prime Physiotherapy Team. From the front desk staff to the physiotherapists, massage therapists, and every service provider, they radiate friendliness.",
+      "category": "friendly",
+      "initials": "CJ"
+    },
+    {
+      "author": "Skyla Thadani",
+      "date": "5 years ago",
+      "stars": 5,
+      "text": "Been working with Maggie for a few months to help my compressed disk. Her in-clinic care and take-home core strengthening program have done wonders for my pain and muscle strength. Additionally, her positive attitude has kept me in high spirits during my recovery!",
+      "category": "back-pain",
+      "initials": "ST"
+    },
+    {
+      "author": "Ann Chartier",
+      "date": "4 years ago",
+      "stars": 5,
+      "text": "After being recommended to this location by a specialist, I decided to seek help. This was my third effort to locate a Physiotherapist/Pelvic Health Specialist and I am so thankful I found Kamand. She is extremely knowledgeable and patient.",
+      "category": "pelvic",
+      "initials": "AC"
+    },
+    {
+      "author": "Sobia Basit",
+      "date": "2 years ago",
+      "stars": 5,
+      "text": "Amazing experience with Dr. Deepika Somani, she is so co-operative and kind! Have been to 2-3 physiotherapists didn't work for my pain, but only 3-4 sessions with her made whole lot of difference! 10/10 recommend.",
+      "category": "friendly",
+      "initials": "SB"
+    },
+    {
+      "author": "sunil YYZ",
+      "date": "10 months ago",
+      "stars": 5,
+      "text": "Excellent care and service received at Prime Physio in Mississauga. Second time I used their location over last 10 years. Patrick B and the rest of the team that assisted with my care were amazing. Highly knowledgeable, they explained everything.",
+      "category": "friendly",
+      "initials": "SY"
+    },
+    {
+      "author": "Siddharth Parab",
+      "date": "3 years ago",
+      "stars": 5,
+      "text": "Had a great massage session with RMT Asra Noori. Her hands on skills are exceptional and very thorough. I highly recommend Prime Physiotherapy. Front desk was kind and helpful as well. Overall a great experience!!",
+      "category": "friendly",
+      "initials": "SP"
+    },
+    {
+      "author": "Dan Giampuzzi",
+      "date": "8 years ago",
+      "stars": 5,
+      "text": "This place is always busy and for good reason - they get results. The therapists are focused on getting you back to normal as soon as possible. They do not keep you for as long as possible or until your benefits run out. Very professional.",
+      "category": "friendly",
+      "initials": "DG"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq1",
+      "question": "Do I need a doctor's referral to receive treatment?",
+      "answer": "No. In Ontario, physiotherapists are primary care providers, meaning you do not need a doctor's referral to schedule an appointment. However, please note that some private extended health insurance policies still require a doctor's referral note for reimbursement. We recommend checking with your insurance provider beforehand.",
+      "category": "general"
+    },
+    {
+      "id": "faq2",
+      "question": "Do you offer direct billing to my insurance company?",
+      "answer": "Yes. We offer direct billing for the vast majority of extended health insurance companies (such as Sun Life, Manulife, Canada Life, Green Shield, and more). We also handle direct billing for Motor Vehicle Accident (MVA) insurance and WSIB (Workplace Safety and Insurance Board) claims.",
+      "category": "billing"
+    },
+    {
+      "id": "faq3",
+      "question": "What happens during my first physiotherapy appointment?",
+      "answer": "Your first session is a 1-hour comprehensive assessment. Your physiotherapist will discuss your medical history, perform a physical examination of your movement patterns, strength, joint mobility, and pain thresholds, accurately diagnose the issue, and create a customized treatment plan. In most cases, you will also receive initial hands-on treatment and a set of home exercises.",
+      "category": "general"
+    },
+    {
+      "id": "faq4",
+      "question": "What is an FCAMPT-certified physiotherapist?",
+      "answer": "FCAMPT stands for Fellow of the Canadian Academy of Manipulative Physiotherapy. It indicates that the therapist has completed extensive, internationally recognized post-graduate education in hands-on manual therapy and clinical reasoning. This represents the highest standard of orthopaedic training for physiotherapists.",
+      "category": "general"
+    },
+    {
+      "id": "faq5",
+      "question": "What should I wear to my physiotherapy session?",
+      "answer": "We recommend wearing loose, comfortable athletic clothing. If we are assessing your lower body (hip, knee, ankle), please bring shorts. If we are examining your neck or shoulder, a tank top or loose t-shirt is ideal so your therapist can easily examine and treat the area.",
+      "category": "general"
+    },
+    {
+      "id": "faq6",
+      "question": "How many sessions will I need before I see results?",
+      "answer": "Our philosophy is focused on results, not volume. Many patients feel noticeable relief in just 3 to 4 sessions. However, recovery speed depends heavily on your specific injury, whether it is acute or chronic, and how closely you follow your home exercise plan. We promise never to keep you in treatment longer than necessary.",
+      "category": "general"
+    }
+  ],
+  "blog": [
+    {
+      "id": "blog1",
+      "date": "July 12, 2026",
+      "title": "Understanding Pelvic Floor Physiotherapy during Pregnancy",
+      "excerpt": "Many expect standard back pain during pregnancy, but pelvic floor health is equally vital. Discover how specialized physiotherapy supports pre and postnatal recovery.",
+      "author": "Martina Skrela, PT",
+      "content": "Pelvic floor health is a crucial yet often overlooked aspect of pregnancy and postpartum recovery. During pregnancy, the pelvic floor muscles carry an increasing load, which can lead to common complaints such as urinary leakage, pelvic girdle pain, or pressure. Pelvic floor physiotherapy helps by assessing the strength and flexibility of these muscles. Our therapists provide personalized exercise programs to safely strengthen or relax the pelvic wall. Postpartum rehabilitation focus turns to restoring core stability and muscle coordination. By addressing pelvic health early, mothers can experience a significantly more comfortable pregnancy, smoother labor, and a faster return to their daily physical routines."
+    },
+    {
+      "id": "blog2",
+      "date": "June 25, 2026",
+      "title": "Manual Therapy vs. Exercise: The Golden Rebuild Protocol",
+      "excerpt": "Is hands-on manual manipulation better than structured home exercises? Our clinic director explains why the combination is the absolute gold standard.",
+      "author": "Ali Faghani, PT",
+      "content": "A common debate in rehabilitation is whether hands-on manual therapy is superior to active exercise prescription. The answer lies in their combination. Manual therapy, including joint mobilizations and soft tissue releases, is highly effective at reducing acute pain, loosening stiff joints, and restoring local joint biomechanics. However, manual therapy alone cannot create long-term structural support. That is where active strengthening exercises come in. Exercise builds muscle memory, increases joint stability, and ensures that the mobility gained in the clinic is maintained at home. Our clinic protocol integrates both: first, we restore movement with manual techniques; then, we lock it in with custom strength training."
+    },
+    {
+      "id": "blog3",
+      "date": "May 18, 2026",
+      "title": "How Vestibular Therapy Resolves Chronic Dizziness (BPPV)",
+      "excerpt": "Dizziness and vertigo can severely impact your quality of life. Learn how targeted vestibular rehabilitation helps reset your balance systems.",
+      "author": "Maggie Mishriky, PT",
+      "content": "Vestibular rehabilitation is a specialized branch of physiotherapy aimed at treating dizziness, vertigo, and balance disorders. The most common cause of vertigo is Benign Paroxysmal Positional Vertigo (BPPV), which occurs when tiny calcium crystals in the inner ear become dislodged. During a vestibular assessment, our physiotherapists use specific head movements (like the Epley Maneuver) to guide these crystals back into place, often resolving the vertigo in just one or two sessions. For chronic dizziness or post-concussive syndrome, we design habituation exercises to retrain the brain to coordinate input from the eyes, inner ear, and body. Vestibular therapy is safe, highly effective, and gets you back on your feet quickly."
+    }
+  ],
+  "exerciseVideos": [
+    {
+      "id": "ex1",
+      "title": "Postural Chin Tucks",
+      "category": "neck",
+      "description": "A simple exercise to strengthen the deep cervical flexor muscles, reducing neck strain and correcting forward head posture common in desk workers.",
+      "youtubeUrl": "https://www.youtube.com/embed/g6dYwE3h4l8",
+      "steps": [
+        "Sit upright with your shoulders relaxed.",
+        "Look straight ahead, and gently pull your chin straight back as if making a double chin.",
+        "Hold the tucked position for 3 to 5 seconds.",
+        "Slowly release and return to the starting position.",
+        "Repeat for 10 repetitions, 3 times daily."
+      ]
+    },
+    {
+      "id": "ex2",
+      "title": "Shoulder External Rotation (With Band)",
+      "category": "shoulder",
+      "description": "Strengthens the infraspinatus and teres minor muscles of the rotator cuff to improve shoulder stability and decrease joint impingement pain.",
+      "youtubeUrl": "https://www.youtube.com/embed/14dM6Vl_m0g",
+      "steps": [
+        "Hold a resistance band with both hands, elbows bent to 90 degrees at your sides.",
+        "Keep your shoulder blades squeezed slightly back and down.",
+        "Keeping your elbows tucked to your ribs, pull your hands outward, stretching the band.",
+        "Hold the outer position for 2 seconds, then slowly return.",
+        "Perform 3 sets of 12 repetitions."
+      ]
+    },
+    {
+      "id": "ex3",
+      "title": "The Bird-Dog Core Stabilizer",
+      "category": "core",
+      "description": "An excellent exercise to build deep core stability and lumbar strength without putting pressure on your spine.",
+      "youtubeUrl": "https://www.youtube.com/embed/wiF9KU_MN74",
+      "steps": [
+        "Start on your hands and knees in a tabletop position with a flat back.",
+        "Slowly extend your right arm straight forward while extending your left leg straight back.",
+        "Hold this position for 3 seconds, keeping your hips parallel to the floor.",
+        "Slowly return to the start and repeat with your left arm and right leg.",
+        "Perform 10 reps on each side, for 2 to 3 sets."
+      ]
+    },
+    {
+      "id": "ex4",
+      "title": "Glute Bridges for Lower Back Support",
+      "category": "hip",
+      "description": "Activates the gluteus maximus and hamstrings, helping to stabilize the pelvis and support the lower back during daily movements.",
+      "youtubeUrl": "https://www.youtube.com/embed/wPM8co452C0",
+      "steps": [
+        "Lie on your back with knees bent and feet flat on the floor, hip-width apart.",
+        "Engage your core and squeeze your glutes.",
+        "Push through your heels to lift your hips toward the ceiling until your body forms a straight line from shoulders to knees.",
+        "Hold at the top for 2 seconds, then slowly lower your hips back down.",
+        "Perform 3 sets of 15 repetitions."
+      ]
+    },
+    {
+      "id": "ex5",
+      "title": "Eccentric Calf Raises for Achilles Tendonitis",
+      "category": "lower-body",
+      "description": "Strengthens the calf muscles and Achilles tendon using slow, controlled lengthening movements, promoting tendon healing.",
+      "youtubeUrl": "https://www.youtube.com/embed/5_V4UaPskD4",
+      "steps": [
+        "Stand with the balls of your feet on the edge of a step, holding a wall or railing for balance.",
+        "Push up with both feet to raise onto your toes.",
+        "Lift one foot off the step, and slowly lower your body down on the single remaining foot over 4 to 5 seconds.",
+        "Place both feet back down and repeat.",
+        "Perform 3 sets of 10 repetitions on each leg."
+      ]
+    }
+  ]
+}

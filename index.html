@@ -30,7 +30,7 @@
   <!-- Sticky Header -->
   <header class="main-header" id="header">
     <div class="container header-container">
-      <a href="#" class="logo">
+      <a href="index.html" class="logo">
         <span class="logo-icon">
           <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-4H7v-2h4V7h2v4h4v2h-4v4z"/>
@@ -44,8 +44,10 @@
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#services" class="nav-link">Services</a></li>
           <li><a href="#team" class="nav-link">Our Team</a></li>
-          <li><a href="#reviews" class="nav-link">Reviews</a></li>
-          <li><a href="#locations" class="nav-link">Locations</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="exercise-videos.html" class="nav-link">Exercise Videos</a></li>
+          <li><a href="faqs.html" class="nav-link">FAQs</a></li>
+          <li><a href="new-blog.html" class="nav-link">Blog</a></li>
         </ul>
       </nav>
 
@@ -68,7 +70,10 @@
         <li><a href="#about" class="mobile-nav-link">About Us</a></li>
         <li><a href="#services" class="mobile-nav-link">Our Services</a></li>
         <li><a href="#team" class="mobile-nav-link">Our Specialists</a></li>
-        <li><a href="#reviews" class="mobile-nav-link">Patient Reviews</a></li>
+        <li><a href="resources.html" class="mobile-nav-link">Resources</a></li>
+        <li><a href="exercise-videos.html" class="mobile-nav-link">Exercise Videos</a></li>
+        <li><a href="faqs.html" class="mobile-nav-link">FAQs</a></li>
+        <li><a href="new-blog.html" class="mobile-nav-link">Blog</a></li>
         <li><a href="#locations" class="mobile-nav-link">Locations & Hours</a></li>
       </ul>
       <button class="btn btn-primary w-full open-booking-btn">Book Appointment</button>
@@ -118,6 +123,15 @@
             <span class="badge-txt">Top Rated on Google</span>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scrolling Reviews Marquee Bar -->
+  <section class="marquee-section">
+    <div class="marquee-wrapper">
+      <div class="marquee-content" id="reviewsMarquee">
+        <!-- Filled dynamically by JS -->
       </div>
     </div>
   </section>
@@ -238,94 +252,8 @@
         </p>
       </div>
 
-      <div class="services-grid grid grid-3">
-        <!-- Service Card 1 -->
-        <div class="service-card">
-          <div class="service-icon-wrapper">
-            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" class="service-svg">
-              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9z"/>
-              <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
-            </svg>
-          </div>
-          <h3>Orthopedic & Sports Physiotherapy</h3>
-          <p>Evidence-based recovery plans for sprains, muscle strains, ligament tears (ACL, rotator cuff), running injuries, and chronic pain. Hands-on joint mobilizations and customized active strengthening plans.</p>
-          <div class="service-card-footer">
-            <button class="btn-text open-booking-btn">Book Service →</button>
-          </div>
-        </div>
-
-        <!-- Service Card 2 -->
-        <div class="service-card">
-          <div class="service-icon-wrapper">
-            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" class="service-svg">
-              <circle cx="12" cy="8" r="5"/>
-              <path d="M3 21v-2a7 7 0 0 1 14 0v2"/>
-            </svg>
-          </div>
-          <h3>Pelvic Floor Physiotherapy</h3>
-          <p>Specialized assessment and rehabilitation for pelvic girdle pain, incontinence, prenatal/postnatal recovery, organ prolapse, and muscle dysfunction. Conducted in fully private, comfortable environments.</p>
-          <div class="service-card-footer">
-            <button class="btn-text open-booking-btn">Book Service →</button>
-          </div>
-        </div>
-
-        <!-- Service Card 3 -->
-        <div class="service-card">
-          <div class="service-icon-wrapper">
-            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" class="service-svg">
-              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-            </svg>
-          </div>
-          <h3>Registered Massage Therapy (RMT)</h3>
-          <p>Targeted deep tissue, myofascial release, Swedish massage, and trigger point therapy to reduce chronic tension, improve localized circulation, and speed up overall muscular recovery.</p>
-          <div class="service-card-footer">
-            <button class="btn-text open-booking-btn">Book Service →</button>
-          </div>
-        </div>
-
-        <!-- Service Card 4 -->
-        <div class="service-card">
-          <div class="service-icon-wrapper">
-            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" class="service-svg">
-              <circle cx="12" cy="12" r="10"/>
-              <line x1="12" y1="8" x2="12" y2="16"/>
-              <line x1="8" y1="12" x2="16" y2="12"/>
-            </svg>
-          </div>
-          <h3>Acupuncture & Dry Needling</h3>
-          <p>Therapeutic insertion of needles targeting neurological pathways and muscular trigger points to immediately alleviate chronic pain, stimulate blood flow, and relieve severe muscle spasms.</p>
-          <div class="service-card-footer">
-            <button class="btn-text open-booking-btn">Book Service →</button>
-          </div>
-        </div>
-
-        <!-- Service Card 5 -->
-        <div class="service-card">
-          <div class="service-icon-wrapper">
-            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" class="service-svg">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
-            </svg>
-          </div>
-          <h3>Concussion & Vestibular Rehab</h3>
-          <p>Advanced diagnostic and active balancing programs for vertigo (BPPV), persistent dizziness, post-concussive syndrome, and general gait/coordination instability issues.</p>
-          <div class="service-card-footer">
-            <button class="btn-text open-booking-btn">Book Service →</button>
-          </div>
-        </div>
-
-        <!-- Service Card 6 -->
-        <div class="service-card">
-          <div class="service-icon-wrapper">
-            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" class="service-svg">
-              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
-            </svg>
-          </div>
-          <h3>Post-Surgical Rehabilitation</h3>
-          <p>Structured, protocol-driven physical therapy following orthopedic surgeries (knee/hip replacements, ACL reconstructions, shoulder operations) to safely restore full range of motion and joint stability.</p>
-          <div class="service-card-footer">
-            <button class="btn-text open-booking-btn">Book Service →</button>
-          </div>
-        </div>
+      <div class="services-grid grid grid-3" id="servicesGrid">
+        <!-- Populated via JS / fallback -->
       </div>
     </div>
   </section>
@@ -337,7 +265,7 @@
         <div class="section-subtitle">OUR SPECIALISTS</div>
         <h2 class="section-title">Meet Our Healthcare Providers</h2>
         <p class="section-desc text-center">
-          Our team is comprised of highly qualified, hands-on professionals who work collaboratively to deliver the highest standard of evidence-based clinical rehabilitation.
+          Our team is comprised of highly qualified, hands-on professionals who work collaboratively to deliver the highest standard of clinical rehabilitation.
         </p>
       </div>
 
@@ -350,199 +278,9 @@
         <button class="filter-btn" data-filter="admin">Assistants & Support</button>
       </div>
 
-      <!-- Team Grid -->
+      <!-- Team Grid (rendered from data.json) -->
       <div class="team-grid grid grid-4" id="teamGrid">
-        <!-- Ali Faghani -->
-        <div class="team-card" data-category="physio">
-          <div class="team-avatar-wrapper">
-            <div class="team-avatar pt-avatar">AF</div>
-          </div>
-          <div class="team-info">
-            <h3>Ali Faghani</h3>
-            <span class="team-role">PT • Owner & Clinic Director</span>
-            <p class="team-desc">20+ years experience in advanced orthopedic care, sports injury rehabilitation, and neck/back pain solutions.</p>
-            <div class="team-tags">
-              <span class="tag">Sports Rehab</span>
-              <span class="tag">Spine Specialist</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Deepika Somani -->
-        <div class="team-card" data-category="physio">
-          <div class="team-avatar-wrapper">
-            <div class="team-avatar pt-avatar">DS</div>
-          </div>
-          <div class="team-info">
-            <h3>Deepika Somani</h3>
-            <span class="team-role">Registered Physiotherapist</span>
-            <p class="team-desc">Renowned for rotator cuff/shoulder recoveries, back pain rehabilitation, and active muscle reconditioning.</p>
-            <div class="team-tags">
-              <span class="tag">Shoulder Injury</span>
-              <span class="tag">Manual Therapy</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Maggie Mishriky -->
-        <div class="team-card" data-category="physio">
-          <div class="team-avatar-wrapper">
-            <div class="team-avatar pt-avatar">MM</div>
-          </div>
-          <div class="team-info">
-            <h3>Maggie Mishriky</h3>
-            <span class="team-role">Registered Physiotherapist</span>
-            <p class="team-desc">Expert in concussion management, vestibular rehab, neck strain relief, and active core strengthening.</p>
-            <div class="team-tags">
-              <span class="tag">Concussions</span>
-              <span class="tag">Vestibular</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Martina Skrela -->
-        <div class="team-card" data-category="pelvic">
-          <div class="team-avatar-wrapper">
-            <div class="team-avatar pelvic-avatar">MS</div>
-          </div>
-          <div class="team-info">
-            <h3>Martina Skrela</h3>
-            <span class="team-role">PT • Pelvic Floor Specialist</span>
-            <p class="team-desc">Dedicated pelvic health physiotherapist specializing in pre/postnatal exercises and core wall dysfunction.</p>
-            <div class="team-tags">
-              <span class="tag">Pelvic Health</span>
-              <span class="tag">Pregnancy</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Monica Youssef -->
-        <div class="team-card" data-category="physio">
-          <div class="team-avatar-wrapper">
-            <div class="team-avatar pt-avatar">MY</div>
-          </div>
-          <div class="team-info">
-            <h3>Monica Youssef</h3>
-            <span class="team-role">Registered Physiotherapist</span>
-            <p class="team-desc">Focused on orthopedic diagnoses, joint biomechanics, post-surgical recovery, and patient education.</p>
-            <div class="team-tags">
-              <span class="tag">Orthopedics</span>
-              <span class="tag">Joint Stability</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Gurdev (Dave) -->
-        <div class="team-card" data-category="physio">
-          <div class="team-avatar-wrapper">
-            <div class="team-avatar pt-avatar">GD</div>
-          </div>
-          <div class="team-info">
-            <h3>Gurdev (Dave)</h3>
-            <span class="team-role">Registered Physiotherapist</span>
-            <p class="team-desc">Highly skilled in manual manipulation, deep muscle release, leg biomechanics, and active recovery routines.</p>
-            <div class="team-tags">
-              <span class="tag">Back & Leg Pain</span>
-              <span class="tag">Manual Therapy</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Kamand -->
-        <div class="team-card" data-category="pelvic">
-          <div class="team-avatar-wrapper">
-            <div class="team-avatar pelvic-avatar">KM</div>
-          </div>
-          <div class="team-info">
-            <h3>Kamand</h3>
-            <span class="team-role">PT • Pelvic Health Specialist</span>
-            <p class="team-desc">Specialized pelvic physiotherapist targeting chronic abdominal pain, muscle coordination, and incontinence.</p>
-            <div class="team-tags">
-              <span class="tag">Pelvic Floor</span>
-              <span class="tag">Incontinence</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Asra Noori -->
-        <div class="team-card" data-category="massage">
-          <div class="team-avatar-wrapper">
-            <div class="team-avatar rmt-avatar">AN</div>
-          </div>
-          <div class="team-info">
-            <h3>Asra Noori</h3>
-            <span class="team-role">Registered Massage Therapist</span>
-            <p class="team-desc">Specializes in targeted trigger-point release, deep tissue massage, and tension headaches relief.</p>
-            <div class="team-tags">
-              <span class="tag">Deep Tissue</span>
-              <span class="tag">Trigger Points</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Ishika Sharma -->
-        <div class="team-card" data-category="physio">
-          <div class="team-avatar-wrapper">
-            <div class="team-avatar pt-avatar">IS</div>
-          </div>
-          <div class="team-info">
-            <h3>Ishika Sharma</h3>
-            <span class="team-role">Registered Physiotherapist</span>
-            <p class="team-desc">Passionate about athletic recovery, acute sprains, and custom injury prevention exercise prescriptions.</p>
-            <div class="team-tags">
-              <span class="tag">Acute Injury</span>
-              <span class="tag">Acupuncture</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Marichi (Maria) -->
-        <div class="team-card" data-category="massage">
-          <div class="team-avatar-wrapper">
-            <div class="team-avatar rmt-avatar">MM</div>
-          </div>
-          <div class="team-info">
-            <h3>Marichi (Maria)</h3>
-            <span class="team-role">Registered Massage Therapist</span>
-            <p class="team-desc">Over a decade of experience in therapeutic Swedish massage, myofascial release, and stress relief.</p>
-            <div class="team-tags">
-              <span class="tag">Swedish Massage</span>
-              <span class="tag">Myofascial</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Hammad -->
-        <div class="team-card" data-category="physio">
-          <div class="team-avatar-wrapper">
-            <div class="team-avatar pt-avatar">HM</div>
-          </div>
-          <div class="team-info">
-            <h3>Hammad</h3>
-            <span class="team-role">Registered Physiotherapist</span>
-            <p class="team-desc">Specialized orthopedic rehab focusing on post-surgical recovery, gait analyses, and return-to-sport testing.</p>
-            <div class="team-tags">
-              <span class="tag">Post-Surgical</span>
-              <span class="tag">Acupuncture</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Mo & Support Staff -->
-        <div class="team-card" data-category="admin">
-          <div class="team-avatar-wrapper">
-            <div class="team-avatar admin-avatar">MO</div>
-          </div>
-          <div class="team-info">
-            <h3>Mo & Support Staff</h3>
-            <span class="team-role">Therapy Assistants & Admin Team</span>
-            <p class="team-desc">Our dedicated receptionist and physical therapy assistant team ensuring a supportive, caring recovery atmosphere.</p>
-            <div class="team-tags">
-              <span class="tag">Coordination</span>
-              <span class="tag">Patient Support</span>
-            </div>
-          </div>
-        </div>
+        <!-- Rendered by app.js from data.json -->
       </div>
     </div>
   </section>
@@ -567,165 +305,14 @@
         <button class="filter-btn" data-review-filter="friendly">Service & Vibe</button>
       </div>
 
-      <!-- Reviews Grid -->
+      <!-- Reviews Grid (rendered from data.json) -->
       <div class="reviews-grid grid grid-3" id="reviewsGrid">
-        <!-- Review 1 -->
-        <div class="review-card" data-review-cat="shoulder">
-          <div class="review-header">
-            <div class="reviewer-badge">NK</div>
-            <div class="reviewer-info">
-              <h4>NoorusSabbah Khan</h4>
-              <span class="review-date">1 year ago • Local Guide</span>
-            </div>
-            <div class="google-logo">G</div>
-          </div>
-          <div class="stars">★★★★★</div>
-          <p class="review-text">
-            "<strong>Deepika</strong> is the most knowledgeable physiotherapist I have ever seen in my life. Thanks to her, my injured shoulder became 100% pain free despite a huge full thickness and another 50% thickness rotator cuff tears."
-          </p>
-          <span class="injury-tag">Shoulder Rotator Cuff</span>
-        </div>
-
-        <!-- Review 2 -->
-        <div class="review-card" data-review-cat="shoulder">
-          <div class="review-header">
-            <div class="reviewer-badge">GT</div>
-            <div class="reviewer-info">
-              <h4>Gabriel Takla</h4>
-              <span class="review-date">5 months ago</span>
-            </div>
-            <div class="google-logo">G</div>
-          </div>
-          <div class="stars">★★★★★</div>
-          <p class="review-text">
-            "I went in with a shoulder Injury, <strong>Monica Youssef</strong> was my PT, she was very kind and encouraging and able to accurately diagnose my shoulder issues and help me to strengthen it and regain stability over a 2 month stretch."
-          </p>
-          <span class="injury-tag">Shoulder Stability</span>
-        </div>
-
-        <!-- Review 3 -->
-        <div class="review-card" data-review-cat="back-pain">
-          <div class="review-header">
-            <div class="reviewer-badge">TC</div>
-            <div class="reviewer-info">
-              <h4>Tyler C</h4>
-              <span class="review-date">4 years ago</span>
-            </div>
-            <div class="google-logo">G</div>
-          </div>
-          <div class="stars">★★★★★</div>
-          <p class="review-text">
-            "Have been seeing <strong>Ali</strong> for almost 10 yrs he's professional and to be honest a magician. I've been to other physios, chiro, massage therapists to help ease my back pain. Ali's the ONLY one who's been able to provide relief."
-          </p>
-          <span class="injury-tag">Chronic Back Pain</span>
-        </div>
-
-        <!-- Review 4 -->
-        <div class="review-card" data-review-cat="pelvic">
-          <div class="review-header">
-            <div class="reviewer-badge">MS</div>
-            <div class="reviewer-info">
-              <h4>Martyna Szyller</h4>
-              <span class="review-date">4 years ago</span>
-            </div>
-            <div class="google-logo">G</div>
-          </div>
-          <div class="stars">★★★★★</div>
-          <p class="review-text">
-            "Wanted to leave a review for the Pelvic Floor Physio <strong>Martina Skrela</strong>. She is so professional, so helpful and knows how to make people feel comfortable. She made a huge impact on my pain during pregnancy."
-          </p>
-          <span class="injury-tag">Pelvic Health</span>
-        </div>
-
-        <!-- Review 5 -->
-        <div class="review-card" data-review-cat="back-pain">
-          <div class="review-header">
-            <div class="reviewer-badge">KD</div>
-            <div class="reviewer-info">
-              <h4>Kim Dhugha</h4>
-              <span class="review-date">1 year ago</span>
-            </div>
-            <div class="google-logo">G</div>
-          </div>
-          <div class="stars">★★★★★</div>
-          <p class="review-text">
-            "I accompanied my husband to see <strong>Gurdev (Dave)</strong> for his back and leg pain... Dave accurately diagnosed the issue and provided personalized exercises that have greatly reduced my husband's pain. We highly recommend him!"
-          </p>
-          <span class="injury-tag">Back & Leg Pain</span>
-        </div>
-
-        <!-- Review 6 -->
-        <div class="review-card" data-review-cat="friendly">
-          <div class="review-header">
-            <div class="reviewer-badge">CJ</div>
-            <div class="reviewer-info">
-              <h4>Claudette Johnson</h4>
-              <span class="review-date">2 years ago</span>
-            </div>
-            <div class="google-logo">G</div>
-          </div>
-          <div class="stars">★★★★★</div>
-          <p class="review-text">
-            "I am grateful for the welcoming, positive, and caring team of professionals... From the front desk staff to the physiotherapists, massage therapists, and every service provider, they radiate friendliness and compassion."
-          </p>
-          <span class="injury-tag">Friendly Staff</span>
-        </div>
-
-        <!-- Review 7 -->
-        <div class="review-card" data-review-cat="back-pain">
-          <div class="review-header">
-            <div class="reviewer-badge">ST</div>
-            <div class="reviewer-info">
-              <h4>Skyla Thadani</h4>
-              <span class="review-date">5 years ago</span>
-            </div>
-            <div class="google-logo">G</div>
-          </div>
-          <div class="stars">★★★★★</div>
-          <p class="review-text">
-            "Been working with <strong>Maggie</strong> for a few months to help my compressed disk. Her in-clinic care and take-home core strengthening program have done wonders for my pain and muscle strength. Her positive attitude kept me in high spirits!"
-          </p>
-          <span class="injury-tag">Compressed Disk</span>
-        </div>
-
-        <!-- Review 8 -->
-        <div class="review-card" data-review-cat="pelvic">
-          <div class="review-header">
-            <div class="reviewer-badge">AC</div>
-            <div class="reviewer-info">
-              <h4>Ann Chartier</h4>
-              <span class="review-date">4 years ago</span>
-            </div>
-            <div class="google-logo">G</div>
-          </div>
-          <div class="stars">★★★★★</div>
-          <p class="review-text">
-            "This was my third effort to locate a Physiotherapist/Pelvic Health Specialist and I am so thankful I found <strong>Kamand</strong>. She is incredibly knowledgeable and made me feel so comfortable."
-          </p>
-          <span class="injury-tag">Pelvic Health</span>
-        </div>
-
-        <!-- Review 9 -->
-        <div class="review-card" data-review-cat="friendly">
-          <div class="review-header">
-            <div class="reviewer-badge">SB</div>
-            <div class="reviewer-info">
-              <h4>Sobia Basit</h4>
-              <span class="review-date">2 years ago</span>
-            </div>
-            <div class="google-logo">G</div>
-          </div>
-          <div class="stars">★★★★★</div>
-          <p class="review-text">
-            "Amazing experience with <strong>Dr. Deepika Somani</strong>, she is so co-operative and kind! Have been to 2-3 physiotherapists didn't work for my pain, but only 3-4 sessions with her made a whole lot of difference! 10/10 recommend :)"
-          </p>
-          <span class="injury-tag">Rapid Recovery</span>
-        </div>
+        <!-- Rendered by app.js from data.json -->
       </div>
     </div>
   </section>
 
-  <!-- Locations Section -->
+  <!-- Locations & Map Section -->
   <section id="locations" class="locations-section section-padding">
     <div class="container">
       <div class="section-center">
@@ -736,34 +323,40 @@
         </p>
       </div>
 
-      <!-- Location Cards Panel -->
-      <div class="locations-wrapper grid grid-2">
-        <!-- Mississauga Card -->
-        <div class="location-card">
+      <!-- Location Switcher Tabs -->
+      <div class="map-tab-controls" style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem;">
+        <button class="map-tab-btn active" id="tabMississauga">Mississauga Clinic & Map</button>
+        <button class="map-tab-btn" id="tabAurora">Aurora Clinic & Map</button>
+      </div>
+
+      <!-- Location Cards & Map Split View -->
+      <div class="location-map-container grid grid-2">
+        <!-- Active Location Card Info -->
+        <div class="location-card" id="activeLocationCard">
           <div class="location-card-header">
-            <h3>Mississauga Clinic</h3>
-            <span class="status-indicator">Direct Booking by Phone</span>
+            <h3 id="locTitle">Mississauga Clinic</h3>
+            <span class="status-indicator" id="locBadge">Direct Booking by Phone</span>
           </div>
           <div class="location-details">
             <div class="detail-row">
               <span class="detail-icon">📍</span>
               <div>
                 <strong>Address:</strong>
-                <p>5425 Creditview Rd, Unit 6, Mississauga, ON L5V 2P3</p>
+                <p id="locAddress">5425 Creditview Rd, Unit 6, Mississauga, ON L5V 2P3</p>
               </div>
             </div>
             <div class="detail-row">
               <span class="detail-icon">📞</span>
               <div>
                 <strong>Phone:</strong>
-                <p><a href="tel:9052869330" class="phone-link">905-286-9330</a></p>
+                <p><a href="tel:9052869330" id="locPhone" class="phone-link">905-286-9330</a></p>
               </div>
             </div>
             <div class="detail-row">
               <span class="detail-icon">⏰</span>
               <div>
                 <strong>Hours:</strong>
-                <div class="hours-grid">
+                <div class="hours-grid" id="locHours">
                   <span>Mon, Wed, Fri:</span> <span>6:30 AM – 7:00 PM</span>
                   <span>Tue, Thu:</span> <span>7:00 AM – 7:00 PM</span>
                   <span>Saturday:</span> <span>9:00 AM – 2:00 PM</span>
@@ -773,50 +366,14 @@
             </div>
           </div>
           <div class="location-actions">
-            <a href="https://maps.google.com/?q=5425+Creditview+Rd+Mississauga+ON+L5V+2P3" target="_blank" rel="noopener" class="btn btn-outline w-full text-center">Get Directions</a>
-            <button class="btn btn-primary w-full open-booking-btn" data-preset-location="mississauga">Book Appointment</button>
+            <a href="https://maps.google.com/?q=5425+Creditview+Rd+Mississauga+ON+L5V+2P3" id="locDirectionsBtn" target="_blank" rel="noopener" class="btn btn-outline w-full text-center">Get Directions</a>
+            <button class="btn btn-primary w-full open-booking-btn" id="locBookingBtn" data-preset-location="mississauga">Book Appointment</button>
           </div>
         </div>
 
-        <!-- Aurora Card -->
-        <div class="location-card">
-          <div class="location-card-header">
-            <h3>Aurora Clinic</h3>
-            <span class="status-indicator status-green">Online Booking Enabled</span>
-          </div>
-          <div class="location-details">
-            <div class="detail-row">
-              <span class="detail-icon">📍</span>
-              <div>
-                <strong>Address:</strong>
-                <p>372 Hollandview Trail, Unit 107, Aurora, ON L4G 0A5</p>
-                <p class="location-note">Serving Richmond Hill, Aurora & surrounding areas</p>
-              </div>
-            </div>
-            <div class="detail-row">
-              <span class="detail-icon">📞</span>
-              <div>
-                <strong>Phone:</strong>
-                <p><a href="tel:9057262252" class="phone-link">905-726-2252</a></p>
-              </div>
-            </div>
-            <div class="detail-row">
-              <span class="detail-icon">⏰</span>
-              <div>
-                <strong>Hours:</strong>
-                <div class="hours-grid">
-                  <span>Mon – Thu:</span> <span>8:00 AM – 8:00 PM</span>
-                  <span>Friday:</span> <span>8:00 AM – 7:00 PM</span>
-                  <span>Saturday:</span> <span>8:00 AM – 2:00 PM</span>
-                  <span>Sunday:</span> <span class="closed-label">Closed</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="location-actions">
-            <a href="https://maps.google.com/?q=372+Hollandview+Trail+Aurora+ON+L4G+0A5" target="_blank" rel="noopener" class="btn btn-outline w-full text-center">Get Directions</a>
-            <button class="btn btn-primary w-full open-booking-btn" data-preset-location="aurora">Book Appointment</button>
-          </div>
+        <!-- Embedded Interactive OpenStreetMap Container -->
+        <div class="map-frame-wrapper" style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); min-height: 400px;">
+          <iframe id="locationMapIframe" src="https://www.openstreetmap.org/export/embed.html?bbox=-79.7225%2C43.5930%2C-79.7025%2C43.6030&layer=mapnik&marker=43.5979%2C-79.7126" style="width: 100%; height: 100%; min-height: 400px; border: none;" title="Clinic Location Map"></iframe>
         </div>
       </div>
     </div>
@@ -914,7 +471,7 @@
   <footer class="main-footer">
     <div class="container footer-grid grid grid-4">
       <div class="footer-col brand-col">
-        <a href="#" class="logo footer-logo">
+        <a href="index.html" class="logo footer-logo">
           <span class="logo-icon">
             <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5">
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-4H7v-2h4V7h2v4h4v2h-4v4z"/>

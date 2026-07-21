@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise Videos | Prime Physiotherapy & Sports Rehabilitation Centre</title>
+  
+  <meta name="description" content="Access home rehabilitation exercise videos for neck, shoulder, core, and lower body prescribed by Prime Physiotherapy clinicians.">
+  <meta name="keywords" content="physiotherapy exercise videos, rotator cuff exercises, chin tucks, core stability, physitrack videos">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header class="main-header" id="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-4H7v-2h4V7h2v4h4v2h-4v4z"/>
+          </svg>
+        </span>
+        <span class="logo-text">PRIME <span class="accent-text">PHYSIO</span></span>
+      </a>
+      
+      <nav class="desktop-nav">
+        <ul>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="index.html#services" class="nav-link">Services</a></li>
+          <li><a href="index.html#team" class="nav-link">Our Team</a></li>
+          <li><a href="resources.html" class="nav-link">Resources</a></li>
+          <li><a href="exercise-videos.html" class="nav-link active">Exercise Videos</a></li>
+          <li><a href="faqs.html" class="nav-link">FAQs</a></li>
+          <li><a href="new-blog.html" class="nav-link">Blog</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-outline nav-location-btn" onclick="window.location.href='index.html#locations'">Locations</button>
+        <button class="btn btn-primary open-booking-btn">Book Appointment</button>
+        <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="index.html#about" class="mobile-nav-link">About Us</a></li>
+        <li><a href="index.html#services" class="mobile-nav-link">Our Services</a></li>
+        <li><a href="index.html#team" class="mobile-nav-link">Our Specialists</a></li>
+        <li><a href="resources.html" class="mobile-nav-link">Resources</a></li>
+        <li><a href="exercise-videos.html" class="mobile-nav-link">Exercise Videos</a></li>
+        <li><a href="faqs.html" class="mobile-nav-link">FAQs</a></li>
+        <li><a href="new-blog.html" class="mobile-nav-link">Blog</a></li>
+      </ul>
+      <button class="btn btn-primary w-full open-booking-btn">Book Appointment</button>
+    </nav>
+  </div>
+
+  <!-- Inner Page Banner -->
+  <section class="page-banner">
+    <div class="container text-center">
+      <div class="badge-tag">HOME REHABILITATION</div>
+      <h1>Patient Exercise Library</h1>
+      <p class="banner-subtext">Demonstrations and step-by-step instructions to assist with your home recovery program.</p>
+    </div>
+  </section>
+
+  <!-- Video Library Section -->
+  <section class="videos-section section-padding">
+    <div class="container">
+      <!-- Category Filters -->
+      <div class="filter-controls video-filters">
+        <button class="filter-btn active" data-video-filter="all">All Exercises</button>
+        <button class="filter-btn" data-video-filter="neck">Neck & Posture</button>
+        <button class="filter-btn" data-video-filter="shoulder">Shoulder</button>
+        <button class="filter-btn" data-video-filter="core">Core & Back</button>
+        <button class="filter-btn" data-video-filter="hip">Hip & Glutes</button>
+        <button class="filter-btn" data-video-filter="lower-body">Lower Body</button>
+      </div>
+
+      <!-- Videos Grid Container (populated dynamically via JS) -->
+      <div class="video-grid grid grid-2" id="videoGrid">
+        <!-- Rendered by app.js from data.json -->
+      </div>
+
+      <!-- Physitrack Callout -->
+      <div class="physitrack-banner" style="margin-top: 5rem; background-color: var(--color-bg-light); border-radius: var(--radius-lg); padding: 3rem; border: 1px solid var(--color-border); display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <div class="badge-tag" style="background-color: var(--color-accent-light); color: var(--color-accent);">CUSTOM HOME PROGRAMS</div>
+        <h3 style="font-size: 1.5rem; margin-top: 0.5rem; margin-bottom: 1rem;">Looking for Your Custom Prescribed Program?</h3>
+        <p style="max-width: 650px; color: var(--color-text-body); margin-bottom: 1.5rem;">
+          Our therapists utilize the <strong>Physitrack / PhysiApp</strong> platform to send individual patients customized exercise prescription video sets, dosages, and form advice directly to their smartphones.
+        </p>
+        <button class="btn btn-primary open-booking-btn">Request a Custom Assessment</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Booking Selector Modal -->
+  <div class="modal-backdrop" id="bookingModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeModalBtn" aria-label="Close booking modal">×</button>
+      <div class="modal-header">
+        <h2>Schedule an Appointment</h2>
+        <p>Please select your desired location to proceed with booking.</p>
+      </div>
+      <div class="modal-body" id="modalStep1">
+        <div class="location-select-grid">
+          <div class="location-box-option" id="optionAurora">
+            <div class="location-badge-online">JaneApp Online</div>
+            <h3>Aurora Location</h3>
+            <p>372 Hollandview Trail, Aurora</p>
+            <span class="location-box-subtext">Book online instantly. Best for Richmond Hill & Aurora patients.</span>
+            <a href="https://auroraprime.janeapp.com/" target="_blank" rel="noopener" class="btn btn-primary w-full text-center location-go-btn" style="margin-top: 1.5rem;">Book Online via JaneApp</a>
+          </div>
+          <div class="location-box-option" id="optionMississauga">
+            <div class="location-badge-call">By Phone / Form</div>
+            <h3>Mississauga Location</h3>
+            <p>5425 Creditview Rd, Mississauga</p>
+            <span class="location-box-subtext">Submit a call-back booking request, or call us directly at 905-286-9330.</span>
+            <button class="btn btn-secondary w-full location-go-btn" id="proceedMississaugaForm" style="margin-top: 1.5rem;">Request Call Back</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body hidden" id="modalStep2">
+        <form id="mississaugaBookingForm" class="booking-form">
+          <div class="form-row grid grid-2">
+            <div class="form-group">
+              <label for="bookingName">Full Name *</label>
+              <input type="text" id="bookingName" required placeholder="John Doe">
+            </div>
+            <div class="form-group">
+              <label for="bookingPhone">Phone Number *</label>
+              <input type="tel" id="bookingPhone" required placeholder="(905) 555-0199">
+            </div>
+          </div>
+          <div class="form-row grid grid-2">
+            <div class="form-group">
+              <label for="bookingEmail">Email Address</label>
+              <input type="email" id="bookingEmail" placeholder="john@example.com">
+            </div>
+            <div class="form-group">
+              <label for="bookingService">Requested Service *</label>
+              <select id="bookingService" required>
+                <option value="" disabled selected>Select a Service</option>
+                <option value="physio">Physiotherapy & Sports Rehab</option>
+                <option value="pelvic">Pelvic Floor Rehabilitation</option>
+                <option value="massage">Registered Massage Therapy (RMT)</option>
+                <option value="acupuncture">Acupuncture & Dry Needling</option>
+                <option value="vestibular">Vestibular / Concussion Rehab</option>
+                <option value="orthotics">Custom Orthotics / Bracing</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="bookingNotes">Preferred Day/Time & Additional Notes</label>
+            <textarea id="bookingNotes" rows="3" placeholder="e.g., Tuesday mornings, shoulder recovery, doctor referral info, etc."></textarea>
+          </div>
+          <div class="modal-form-actions">
+            <button type="button" class="btn btn-outline" id="backToStep1">← Back</button>
+            <button type="submit" class="btn btn-primary">Submit Booking Request</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-body hidden text-center" id="modalStep3">
+        <div class="success-icon">✓</div>
+        <h3>Booking Request Received</h3>
+        <p class="success-message">
+          Thank you! Your inquiry has been submitted. The Prime Physiotherapy Mississauga front desk team will contact you at your provided number to finalize your appointment time.
+        </p>
+        <p class="success-callout">
+          Need immediate booking? Call us directly: <br>
+          <strong><a href="tel:9052869330">905-286-9330</a></strong>
+        </p>
+        <button class="btn btn-primary" id="finishBookingBtn" style="margin-top: 1.5rem;">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-grid grid grid-4">
+      <div class="footer-col brand-col">
+        <a href="index.html" class="logo footer-logo">
+          <span class="logo-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-4H7v-2h4V7h2v4h4v2h-4v4z"/>
+            </svg>
+          </span>
+          <span class="logo-text">PRIME <span class="accent-text">PHYSIO</span></span>
+        </a>
+        <p class="footer-desc">
+          Providing clinical excellence and compassionate physical rehabilitation services across the Greater Toronto Area since 2001.
+        </p>
+        <div class="accreditation-badges">
+          <span class="acc-badge">WSIB Approved</span>
+          <span class="acc-badge">MVA Provider</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#services">Orthopedic Physiotherapy</a></li>
+          <li><a href="index.html#services">Pelvic Floor Rehabilitation</a></li>
+          <li><a href="index.html#services">Massage Therapy (RMT)</a></li>
+          <li><a href="index.html#services">Vestibular Rehab</a></li>
+          <li><a href="index.html#services">Acupuncture & Needling</a></li>
+          <li><a href="index.html#services">Custom Orthotics</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Our Clinics</h4>
+        <ul class="footer-links">
+          <li>
+            <strong>Mississauga:</strong>
+            <p>5425 Creditview Rd, Unit 6<br>Phone: 905-286-9330</p>
+          </li>
+          <li style="margin-top: 1rem;">
+            <strong>Aurora & Richmond Hill:</strong>
+            <p>372 Hollandview Trail, Unit 107<br>Phone: 905-726-2252</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#about">About Our Clinic</a></li>
+          <li><a href="index.html#team">Our Therapists</a></li>
+          <li><a href="index.html#reviews">Verified Reviews</a></li>
+          <li><a href="https://auroraprime.janeapp.com/" target="_blank" rel="noopener">Aurora JaneApp Portal</a></li>
+          <li><a href="index.html#locations">Hours of Operation</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>&copy; 2026 Prime Physiotherapy & Sports Rehabilitation Centre. All rights reserved.</p>
+        <div class="footer-meta-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- App JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
